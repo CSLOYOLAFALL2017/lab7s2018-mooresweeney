@@ -1,13 +1,26 @@
 #Functions's purpose: read in a file name from the user and return it once they give one that exists
 #Parameters: None
 #Return: file name
-
+ Define file name function (no parameters)
+1.Ask user for input of desired file name
+2.Create a boolean operator for the following loop
+3.Create a while loop for the boolean operator
+    a.Within the loop, create a "try"
+        #Attempt to open the user's input file
+        #Set the boolean operator to false to ensure the loop does not repeat
+        #Return the file name
+    b.Create an "except" for "FileNotFoundError"
+        #Ask for the file name again
 
 
 
 #Function's purpose: Process the file
 #Parameters: file name of file to read from
 #Return: The maximum profit
+ Define maximum profit function (with parameter of file to read from)
+1.Open file for reading
+2.Use the split operator to separate each bit of information into individual variables
+3.
 
 
 
