@@ -35,13 +35,23 @@ def profit(file): # finds the highest profit among the list of movies
           profitB = profitA
     return profitB
 
-def write(file):
+
+def write(file):#opens file to write into another file
     filename = open("file", "w")
+    information = output.write(file)
 
 
-def main():
+
+
+
+def main():#calls the other functions and outputs the information for the user
     fileName = error()
     highestProfit = profit(fileName)
+    print(" ")
     print("The movie with the highest profit made $%.2f" % highestProfit)
 
+
+
+
 main()
+
