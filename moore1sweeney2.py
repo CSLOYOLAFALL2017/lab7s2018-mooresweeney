@@ -1,5 +1,4 @@
 
-
 def error():
     filename = input("please enter a file name: ")
     file_not_found = True  # get inside loop at least once
@@ -23,8 +22,12 @@ def profit(file):
         profit = revenue - budget
 
         return profit
+def write():
+    filename: open("file", "w")
 
 
 def main():
-    file_name = error()
+    filename = error()
     profit = profit()
+
+error()
