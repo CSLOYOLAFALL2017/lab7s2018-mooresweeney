@@ -20,9 +20,11 @@ def error():
 def profit(file):
     for line in file:
         date, name, budget, revenue = line.split(",")
-        print(name)
+        profit = revenue - budget
+
+        return profit
 
 
-
-nameOfFile = error()
-profit(nameOfFile)
+def main():
+    file_name = error()
+    profit = profit()
