@@ -1,5 +1,13 @@
+# Programmers: Brendan Sweeney and Brendan Moore
+# Course: CS151.02, Professor Franceschi
+# Date: 3/23/18
+# Lab Assignment: Lab 7
+# Problem Statement: This program reads a file input by the user and outputs the highest movie profit and writes the list to a new file.
+# Data In: file name
+# Data Out: highest profit, list to new file
+# Other Files: movies.csv and test.csv
 
-def error():
+def error(): # tests whether or not the input name of a file is valid
     filename = input("please enter a file name: ")
     file_not_found = True  # get inside loop at least once
     while (file_not_found):
@@ -16,18 +24,24 @@ def error():
 
 
 
-def profit(file):
+def profit(file): # finds the highest profit among the list of movies
+    profitB = 0
     for line in file:
         date, name, budget, revenue = line.split(",")
-        profit = revenue - budget
+        budget = float(budget)
+        revenue = float(revenue)
+        profitA = revenue - budget
+        if profitA > profitB: # compares current profit to previous profits of the loop, sorts through and finds the highest
+          profitB = profitA
+    return profitB
 
-        return profit
-def write():
-    filename: open("file", "w")
+def write(file):
+    filename = open("file", "w")
 
 
 def main():
-    filename = error()
-    profit = profit()
+    fileName = error()
+    highestProfit = profit(fileName)
+    print("The movie with the highest profit made $%.2f" % highestProfit)
 
-error()
+main()
