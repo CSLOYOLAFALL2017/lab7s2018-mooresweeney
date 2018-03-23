@@ -38,6 +38,7 @@ def profit(file): # finds the highest profit among the list of movies
 
 def write(file):#opens file to write into another file
     filename = open("file", "w")
+    new_file = input("what is the new name of the file")
     information = output.write(file)
 
 
