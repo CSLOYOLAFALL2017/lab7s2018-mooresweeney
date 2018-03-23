@@ -20,7 +20,8 @@
  Define maximum profit function (with parameter of file to read from)
 1.Open file for reading
 2.Use the split operator to separate each bit of information into individual variables
-3.
+3.put the variables into the equation
+4.Return the max profit
 
 
 
@@ -28,10 +29,13 @@
 #Function's purpose: Process the file
 #Parameters: file name of file to read from, file name of file to write to
 #Return: None
-
+1. open the file for writing
+2.output the information to new folder
 
 
 
 #Function's purpose: main
 #Parameters: None
 #Return: None
+1. call the functions
+2. print the max profit
